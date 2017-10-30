@@ -1,0 +1,39 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "0.1.0",
+  "command": "npm",
+  "isShellCommand": true,
+  "showOutput": "always",
+  "suppressTaskName": true,
+  "tasks": [
+    {
+        "taskName": "local",
+        "args": ["run", "kintonelocal"]
+    },
+    {
+        "taskName": "kintone",
+        "args": ["run", "kintonedev"]
+    },
+    {
+        "taskName": "prod",
+        "args": ["run", "kintoneprod"]
+    },
+    {
+        "taskName": "_clean",
+        "args": ["run", "_clean"]
+    },
+    {
+      "taskName": "install",
+      "args": ["install"]
+    },
+    {
+      "taskName": "update",
+      "args": ["update"]
+    },
+    {
+      "taskName": "test",
+      "args": ["run", "test"]
+    }
+  ]
+}
